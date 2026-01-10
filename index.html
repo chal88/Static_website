@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JustShop | Colorful Store</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);
+        font-family: 'Poppins', sans-serif;
+    }
+
+    /* JustShop Title Background */
+    .shop-title {
+      display: inline-block;
+      background: linear-gradient(135deg, #845ec2, #d65db1, #ff9671);
+      background-size: 300% 300%;
+      color: white;
+      padding: 15px 35px;
+      border-radius: 50px;
+      font-weight: 700;
+      text-shadow: 2px 2px rgba(0, 0, 0, 0.2);
+    }
+
+    @keyframes gradientFlow {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    .product-card {
+      border-radius: 15px;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+      border: none;
+      padding: 15px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      background: linear-gradient(135deg, #ffffff, #f9f9f9);
+    }
+
+    .product-card:hover {
+      transform: translate(-8px);
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .product-img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 10px;
+      transition: transform 0.4s ease;
+    }
+
+    .product-card:hover .product-img {
+      transform: scale(1.05);
+    }
+
+    .product-name {
+        color: #333;
+        font-weight: 600;
+        margin-top: 10px;
+    }
+
+    .product-price {
+        color: #28a745;
+        font-weight: bold;
+        font-size: 1.1rem;
+    }
+
+    .btn-buy {
+        background: linear-gradient(135deg, #ff6f91, #ff9671);
+        border: none;
+        color: white;
+        padding: 10px 20px;
+        border-radius: 25px;
+        transition: background-color 0.3s ease;
+    }
+
+    .btn-buy:hover {
+        background: linear-gradient(135deg, #845ec2, #d65db1);
+    }
+
+    footer {
+      background: linear-gradient(135deg, #845ec2, #d65db1);
+      color: white;
+      padding: 40px 0;
+      margin-top: 60px;
+    }
+
+    .footer-logo {
+      width: 60px;
+      height: auto;
+      margin-right: 15px;
+      border-radius: 50%;
+      background-color: white;
+      padding: 5px;
+
+    }
+
+    .form-control {
+      border-radius: 25px;
+      border: none;
+      padding: 10px 15px;
+    }
+
+    .btn-footer {
+      background-color: #ff9671;
+      border: none;
+      color: white;
+      border-radius: 25px;
+      transition: background-color 0.3s ease;
+    }
+
+    .btn-footer:hover {
+      background-color: #ffc75f;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="container py-5 text-center">
+    <div class="mb-4">
+      <h1 class="shop-title">JustShop.co.za</h1>
+    <p class="mt-3 text-muted">Welcome to JustShop, your one-stop online shop for all your needs! Browse our wide selection of products and enjoy a seamless shopping experience.</p>
+
+    <style> 
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+    .logo {
+      font-family: 'Poppins', sans-serif;
+      font-size: 3rem;
+      font-weight: 800;
+      background: linear-gradient(135deg, #845ec2, #d65db1, #ff9671);
+      background-size: 400% 400%;
+
+      /* Vendor-prefixes for better browser support */
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+
+      /* Standard syntax */
+      background-clip: text; /* standard property */
+      color: transparent; /* fallback for browsers that do not support background-clip */
+      animation: gradientFlow 6s ease infinite;
+      text-shadow: 2px 2px rgba(0, 0, 0, 0.2);
+      margin-bottom: 2opx;
+    }
+
+    @keyframes gradientAnimation {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+    </style>
+  </div>
+
+    <!-- Product Grid -->
+    <div class="row g-4">
+      <!-- Repeat 10 colourful Products: Product 1 -->
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="product-card">
+          <img src="WirelessHeadphones.jpg" class="img-fluid product-img" alt="Product 1">
+          <h5 class="product-name">Wireless Headphones</h5>
+          <p class="product-price">R799.99</p>
+          <button class="btn btn-buy">Buy</button>
+        </div>
+      </div>
+
+      <!-- Product 2 -->
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="product-card">
+          <img src="SmartWatch.jpg" class="img-fluid product-img" alt="Product 2">
+          <h5 class="product-name">Smart Watch</h5>
+          <p class="product-price">R1,299.00</p>
+          <button class="btn btn-buy">Buy</button>
+        </div>
+      </div>
+
+      <!-- Product 3 -->
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="product-card">
+          <img src="Bluetooth Speaker.jpg" class="img-fluid product-img" alt="Product 3">
+          <h5 class="product-name">Bluetooth Speaker</h5>
+          <p class="product-price">R599.00</p>
+          <button class="btn btn-buy">Buy</button>
+        </div>
+      </div>
+
+      <!-- Product 4 -->
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="product-card">
+          <img src="Gaming Mouse.jpg" class="img-fluid product-img" alt="Product 4">
+          <h5 class="product-name">Gaming Mouse</h5>
+          <p class="product-price">R449.99</p>
+          <button class="btn btn-buy">Buy</button>
+        </div>
+      </div>
+
+      <!-- Product 5 -->
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="product-card">
+          <img src="Laptop Backpack.webp" class="img-fluid product-img" alt="Product 5">
+          <h5 class="product-name">Laptop Backpack</h5>
+          <p class="product-price">R699.00</p>
+          <button class="btn btn-buy">Buy</button>
+        </div>
+      </div>
+
+      <!-- Product 6 -->
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="product-card">
+          <img src="Wireless Keyboard.jpg" class="img-fluid product-img" alt="Product 6">
+          <h5 class="product-name">Wireless Keyboard</h5>
+          <p class="product-price">R349.00</p>
+          <button class="btn btn-buy">Buy</button>
+        </div>
+      </div>
+
+      <!-- Product 7 -->
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="product-card">
+          <img src="Phone Stand.jpg" class="img-fluid product-img" alt="Product 7">
+          <h5 class="product-name">Phone Stand</h5>
+          <p class="product-price">R149.99</p>
+          <button class="btn btn-buy">Buy</button>
+        </div>
+      </div>
+
+      <!-- Product 8 -->
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="product-card">
+          <img src="Power Bank.jpg" class="img-fluid product-img" alt="Product 8">
+          <h5 class="product-name">Power Bank</h5>
+          <p class="product-price">R299.00</p>
+          <button class="btn btn-buy">Buy</button>
+        </div>
+      </div>
+
+      <!-- Product 9 -->
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="product-card">
+          <img src="USB Flash Drive 64GB.jpg" class="img-fluid product-img" alt="Product 9">
+          <h5 class="product-name">USB Flash Drive 64GB</h5>
+          <p class="product-price">R199.00</p>
+          <button class="btn btn-buy">Buy</button>
+        </div>
+      </div>
+
+      <!-- Product 10 -->
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="product-card">
+          <img src="Wireless Charger.jpg" class="img-fluid product-img" alt="Product 10">
+          <h5 class="product-name">Wireless Charger</h5>
+          <p class="product-price">R399.00</p>
+          <button class="btn btn-buy">Buy</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer Section -->
+  <footer>
+    <div class="container">
+      <div class="d-flex flex-column flex-md-row align-items-center justify-content-between">
+        <div class="d-flex align-items-center mb-3 mb-md-0">
+          <img src="Logo.png" alt="Company Logo" class="footer-logo">
+          <h5 class="mb-0">JustShop.co.za</h5>
+        </div>
+
+        <form class="d-flex flex-column flex-sm-row align-items-center gap-2">
+          <input type="text" class="form-control" placeholder="Your Name" required>
+          <input type="email" class="form-control" placeholder="Your Email" required>
+          <button class="btn btn-footer" type="submit">Contact Us</button>
+        </form>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
